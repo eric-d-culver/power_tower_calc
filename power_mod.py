@@ -18,7 +18,7 @@ def powers_mod_cycle(b, m):
         j += 1
         if (val == res[-1]):
             break
-    return (j - m, res)
+    return (j - m, res) # res uses alot of memory when m is large. How to fix?
 
 def is_one(pt):
     if len(pt) == 0: # no more powers is the same as a power of 1
